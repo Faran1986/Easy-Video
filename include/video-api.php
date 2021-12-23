@@ -7,7 +7,7 @@ function inert_video()
 {
     $API_key    = "AIzaSyBYlUw77iAcNGhiqHmOUzd_vASqPKCXuLM";
     $channelID  = "UCBi2mrWuNuyYy4gbM6fU18Q";
-    $maxResults = 10;
+    $maxResults = 50;
     $videoList = json_decode(file_get_contents('https://www.googleapis.com/youtube/v3/search?order=date&part=snippet&channelId=' . $channelID . '&maxResults=' . $maxResults . '&key=' . $API_key . ''));
     //echo '<pre>', print_r($videoList), '</pre>';
 
